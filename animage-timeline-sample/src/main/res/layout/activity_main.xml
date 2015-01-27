@@ -1,0 +1,53 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.laimiux.timeline.TimelineView
+        android:id="@+id/timeline_container"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:item_width="@dimen/timeline_controller_item_width">
+
+        <com.laimiux.timeline.TimelineListView
+            android:id="@+id/timeline_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/timeline_controller_container"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"/>
+
+        <FrameLayout
+            android:id="@id/timeline_controller_container"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@null">
+
+            <com.laimiux.timeline.TimelineControllerView
+                android:id="@+id/timeline_controller"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/holo_blue_light"
+                android:listSelector="@android:color/transparent"
+                app:hlv_stackFromRight="true"
+                app:hlv_transcriptMode="alwaysScroll"
+                app:item_width="@dimen/timeline_controller_item_width"/>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@android:color/white"/>
+
+        </FrameLayout>
+
+    </com.laimiux.timeline.TimelineView>
+
+</RelativeLayout>

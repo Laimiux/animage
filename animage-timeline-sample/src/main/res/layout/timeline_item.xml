@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.laimiux.animage.gridview.ImageGridView
+    android:id="@+id/timeline_image_grid_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:space="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    space:maxImageHeight="300dp"
+    space:paddingBetweenImages="5dp" />
+

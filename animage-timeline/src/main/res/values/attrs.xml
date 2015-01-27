@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="item_width" format="dimension" />
+
+    <declare-styleable name="TimelineControllerView">
+        <attr name="item_width" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TimelineView">
+        <attr name="item_width" />
+    </declare-styleable>
+</resources>
